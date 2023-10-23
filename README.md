@@ -7,6 +7,8 @@ Transactions on Machine Learning Research (TMLR), 2023
 
 > **TL;DR:** We introduce VoLTA (Vision-Language Transformer with weakly-supervised local-feature Alignment), a new vision-language pre-training (VLP) paradigm that only utilizes image-caption data but achieves fine-grained region-level image understanding, eliminating the use of expensive bounding box annotations.
 
+<img src="/Figures/VoLTA_overview.png" alt="VoLTA" width="820" />
+
 ## 📢 News
 
 - [October, 2023] We release the first version of the VoLTA codebase.
@@ -18,12 +20,12 @@ The contents of this repository are structured as follows:
 
 ```bash
 VoLTA
-    ├── Pretraining
+    ├── Pre-training
     ├── Multimodal_Fine_Grained
     ├── Multimodal_Coarse_Grained
     │   │── VQAv2
     │   │── NLVR2
-    │   │── IR_TR
+    │   │── IRTR
     │   │── Captioning
 ```
 

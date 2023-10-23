@@ -46,17 +46,15 @@ data_root
     │   └── ...
     └── region_descriptions.json
 ```
-## 📊 Pre-trained Checkpoints and Results
-
-TBD
-
-## 🏋️‍️ Pretraining
-We use PyTorch’s native DistributedDataParallel (DDP) and FP16 mixed precision training. We pre-train our model for 200 epochs with a batch size of 256, using LARS optimizer. Pre-training takes * days on * A100 GPUs.
-
-- Pre-training with COCO dataset
+## ⚓ Pre-trained Checkpoint
+The pretrained weights of VoLTA can be downloaded as:
+```bash
+wget http://www.cis.jhu.edu/~shraman/VoLTA/ckpts/VoLTA_Pre-trained.pth
 ```
-python main.py --batch_size 256 --epochs 200 --data_root_coco <coco_path> --maxlen 30 --checkpoint-dir ./checkpoint/ --print_freq 100 --name volta_pretraining
-```
+
+
+## 🏋️‍️ Pre-training
+We use PyTorch’s native DistributedDataParallel (DDP) and FP16 mixed precision training. We pre-train our model for 200 epochs with a batch size of 256, using LARS optimizer.
 
 - Pre-training with COCO + VG dataset
 ```
@@ -65,4 +63,5 @@ python main.py --batch_size 256 --epochs 200 --data_root_coco <coco_path> --data
 
 ## 🙏Acknowledgement
 
+This codebase is built on the [FIBER](https://github.com/microsoft/FIBER), [GOT](https://github.com/LiqunChen0606/Graph-Optimal-Transport) and [Barlow Twins](https://github.com/facebookresearch/barlowtwins) repository.
 
