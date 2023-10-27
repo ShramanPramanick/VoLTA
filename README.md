@@ -22,6 +22,9 @@ The contents of this repository are structured as follows:
 VoLTA
     ├── Pre-training
     ├── Multimodal_Fine_Grained
+    │   │── REC
+    │   │── LVIS
+    │   │── COCO_det
     ├── Multimodal_Coarse_Grained
     │   │── VQAv2
     │   │── NLVR2
