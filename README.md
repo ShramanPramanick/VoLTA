@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ```
 
 ## ✉️ Contact
-This repository is created and maintained by [Shraman](https://shramanpramanick.github.io/) and [Sayan](https://sayannag.github.io/). Questions and discussions are welcome via spraman3@jhu.edu.
+This repository is created and maintained by [Shraman](https://shramanpramanick.github.io/). Questions and discussions are welcome via spraman3@jhu.edu.
 
 ## 🙏 Acknowledgements
 
