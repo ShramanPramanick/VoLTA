@@ -39,13 +39,6 @@ Also, download the following file required for CIDEr optimization during caption
 wget http://www.cis.jhu.edu/~shraman/coco-train-words.p
 ```
 
-<!-- ## 📊 Pre-trained Checkpoints and Results
-##### 09-06-multimodal-epochs-20-learning-rate-weights-0.15
-```
-wget http://www.cis.jhu.edu/~shraman/384_0.15_mscoco2014_mlm_itm_model_ep20.ckpt
-```
--->
-
 
 ## 🎯 Fine-tuning on Downstream Tasks
 
