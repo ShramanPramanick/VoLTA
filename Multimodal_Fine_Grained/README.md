@@ -18,10 +18,10 @@ pip install numpy,pymongo
 
 ## ⚙️ Model Preparation
 
-Download the initialization weights of FPN and DyHead from [here](http://www.cis.jhu.edu/~shraman/VoLTA/ckpts/FPN_DyHead_init.pkl) and place it in <path_to_dyhead_init>. 
+Download the initialization weights of FPN and DyHead from [here](http://www.cis.jhu.edu/~shraman/VoLTA/ckpts/FPN_DyHead_init.pkl) and place it in <path_to_fpn_dyhead_init>. 
 Convert the VoLTA pretrained checkpoint to make it compatible with FIBER codebase using the following:
 ```
-python model_conversion_volta2fiber.py --old_model_path <volta_ckpt_path> --new_model_path <converted_ckpt_path> --fpn_dyhead_init <path_to_dyhead_init>
+python convert_volta2fiber.py --old_model_path <volta_ckpt_path> --new_model_path <converted_ckpt_path> --fpn_dyhead_init <path_to_fpn_dyhead_init>
 ```
 
 ## 📝 Data Preparation

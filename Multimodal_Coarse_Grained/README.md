@@ -8,7 +8,7 @@ conda activate volta_coarse_grained
 pip install -r requirements.txt
 pip install -e .
 ```
-Install Sacred from source:
+Install sacred from source:
 ```
 git clone https://github.com/IDSIA/sacred.git
 cd sacred
@@ -20,7 +20,7 @@ pip install numpy,pymongo
 
 Convert volta pretrained checkpoint to make it compatible with fiber codebase using the following:
 ```
-python model_conversion_volta2fiber.py --old_model_path <volta_ckpt_path> --new_model_path <converted_ckpt_path>
+python convert_volta2fiber.py --old_model_path <volta_ckpt_path> --new_model_path <converted_ckpt_path>
 ```
 
 ## 📝 Data Preparation
@@ -29,14 +29,14 @@ We follow [ViLT](https://github.com/dandelin/ViLT) and [METER](https://github.co
 
 We have prepared the required data for quick start. We provide these as follows:
 ```
-wget http://www.cis.jhu.edu/~shraman/datasets_pyarrow/NLVR2_arrows.zip
-wget http://www.cis.jhu.edu/~shraman/datasets_pyarrow/VQAv2_arrows.zip
-wget http://www.cis.jhu.edu/~shraman/datasets_pyarrow/mscoco2014_arrows.zip
-wget http://www.cis.jhu.edu/~shraman/datasets_pyarrow/flickr30k_arrows.zip
+wget http://www.cis.jhu.edu/~shraman/VoLTA/datasets_pyarrow/NLVR2_arrows.zip
+wget http://www.cis.jhu.edu/~shraman/VoLTA/datasets_pyarrow/VQAv2_arrows.zip
+wget http://www.cis.jhu.edu/~shraman/VoLTA/datasets_pyarrow/mscoco2014_arrows.zip
+wget http://www.cis.jhu.edu/~shraman/VoLTA/datasets_pyarrow/flickr30k_arrows.zip
 ```
 Also, download the following file required for CIDEr optimization during captioning, and modify the path in the last line of config.
 ```
-wget http://www.cis.jhu.edu/~shraman/coco-train-words.p
+wget http://www.cis.jhu.edu/~shraman/VoLTA/coco-train-words.p
 ```
 
 
